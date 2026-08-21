@@ -11,8 +11,8 @@ import {
 } from "lucide-react";
 
 import heroCyclist from "@/assets/hero-cyclist.jpg";
-import lactateTesting from "@/assets/lactate-testing.jpg";
-import cdaTesting from "@/assets/tt-solo-bw.jpg.asset.json";
+import lactateTesting from "@/assets/lactate-bw.jpg.asset.json";
+import cdaTesting from "@/assets/tt-solo-cropped.jpg.asset.json";
 
 const TITLE = "Breakaway Method | Science-Backed Cycling Coaching";
 const DESCRIPTION =
