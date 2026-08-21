@@ -10,7 +10,7 @@ import {
   Check,
 } from "lucide-react";
 
-import heroCyclist from "@/assets/hero-cyclist.jpg";
+import heroCyclist from "@/assets/hero-race-corner-bw.jpg.asset.json";
 import lactateTesting from "@/assets/lactate-bw.jpg.asset.json";
 import cdaTesting from "@/assets/tt-solo-cropped.jpg.asset.json";
 
