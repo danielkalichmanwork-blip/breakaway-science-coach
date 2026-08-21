@@ -12,7 +12,7 @@ import {
 
 import heroCyclist from "@/assets/hero-cyclist.jpg";
 import lactateTesting from "@/assets/lactate-testing.jpg";
-import cdaTesting from "@/assets/cda-testing.jpg";
+import cdaTesting from "@/assets/tt-solo-bw.jpg.asset.json";
 
 const TITLE = "Breakaway Method | Science-Backed Cycling Coaching";
 const DESCRIPTION =
