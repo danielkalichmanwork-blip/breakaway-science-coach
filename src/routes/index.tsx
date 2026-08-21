@@ -10,7 +10,7 @@ import {
   Check,
 } from "lucide-react";
 
-import heroCyclist from "@/assets/hero-cyclist.jpg";
+import heroCyclist from "@/assets/hero-race-corner-bw.jpg.asset.json";
 import lactateTesting from "@/assets/lactate-bw.jpg.asset.json";
 import cdaTesting from "@/assets/tt-solo-cropped.jpg.asset.json";
 
@@ -136,8 +136,8 @@ function Index() {
       {/* Hero */}
       <section id="top" className="relative flex min-h-[92vh] items-end overflow-hidden">
         <img
-          src={heroCyclist}
-          alt="Cyclist riding in an aerodynamic time trial position on a mountain road at dawn"
+          src={heroCyclist.url}
+          alt="Road cyclists cornering at speed in a race"
           width={1920}
           height={1280}
           className="absolute inset-0 size-full object-cover object-center"
