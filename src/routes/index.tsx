@@ -222,7 +222,7 @@ function Index() {
           <div className="mt-14 grid gap-8 lg:grid-cols-2">
             {[
               {
-                img: cdaTesting,
+                img: cdaTesting.url,
                 alt: "Cyclist performing real-time aerodynamic CdA field testing on a track",
                 tag: "Aerodynamics",
                 title: "Real-time CdA testing",
