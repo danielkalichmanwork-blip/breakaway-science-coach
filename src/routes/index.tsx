@@ -234,7 +234,7 @@ function Index() {
                 ],
               },
               {
-                img: lactateTesting,
+                img: lactateTesting.url,
                 alt: "Lactate analyser and blood sample strip in a performance testing lab",
                 tag: "Physiology",
                 title: "Lactate testing",
