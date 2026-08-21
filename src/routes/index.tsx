@@ -256,7 +256,7 @@ function Index() {
                   loading="lazy"
                   width={1200}
                   height={900}
-                  className="h-60 w-full object-cover object-[center_15%]"
+                  className="h-60 w-full object-cover object-top"
                 />
                 <div className="p-8">
                   <p className="eyebrow">{t.tag}</p>
