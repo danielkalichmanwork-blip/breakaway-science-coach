@@ -322,15 +322,6 @@ function Index() {
                 standard of evidence doesn't.
               </p>
             </div>
-            <a
-              href="https://www.procyclingstats.com/rider/daniel-kalichman"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-sm border border-border px-5 py-3 text-sm font-semibold transition-colors hover:bg-secondary"
-            >
-              View racing palmarès on ProCyclingStats
-              <ArrowUpRight className="size-4" />
-            </a>
           </div>
           <div className="rounded-sm border border-border bg-card p-8">
             <h3 className="text-lg uppercase">Coaching focus</h3>
@@ -429,14 +420,6 @@ function Index() {
             >
               coach@breakawaymethod.com
               <ArrowUpRight className="size-4" />
-            </a>
-            <a
-              href="https://www.procyclingstats.com/rider/daniel-kalichman"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-sm border border-border px-6 py-3 font-semibold transition-colors hover:bg-secondary"
-            >
-              Racing profile
             </a>
           </div>
         </div>
