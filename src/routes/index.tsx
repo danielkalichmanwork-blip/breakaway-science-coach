@@ -307,19 +307,20 @@ function Index() {
             <h2 className="mt-3 text-4xl uppercase sm:text-5xl">Daniel Kalichman</h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
               <p>
-                I'm a racing cyclist and coach. Everything I ask of an athlete, I've tested on
-                myself first — in training blocks, in the wind, and on race day.
+                I’m an ex-pro cyclist and now a coach who believes the best results derive from
+                both experience and evidence. Everything I ask of an athlete, I’ve tested myself —
+                through training, racing, wind, fatigue, and high-pressure competition.
               </p>
               <p>
-                Breakaway Method came out of a simple frustration: too much coaching is inherited
-                tradition dressed up as science. My work starts with measurement — lactate,
-                aerodynamics, training load — and ends with decisions you can understand and
-                repeat.
+                Breakaway Method was built around a simple idea: replace inherited training habits
+                with measurable, individualized coaching. I use data including lactate, power,
+                aerodynamics, training load, and race performance to turn physiology and sports
+                science into practical decisions.
               </p>
               <p>
-                I coach road, gravel, time trial and track athletes, from first-season racers to
-                riders chasing national-level results. The plan changes with the athlete; the
-                standard of evidence doesn't.
+                I coach road, gravel, time trial, and track cyclists — from developing racers to
+                athletes pursuing national-level performance. The approach is always individual.
+                The standard of evidence is not.
               </p>
             </div>
           </div>
