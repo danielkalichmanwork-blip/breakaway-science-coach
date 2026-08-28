@@ -351,6 +351,37 @@ function Index() {
         </div>
       </section>
 
+      {/* Resources */}
+      <section id="resources" className="border-t border-border py-24">
+        <div className="mx-auto max-w-6xl px-5">
+          <p className="eyebrow">Resources</p>
+          <h2 className="mt-3 max-w-2xl text-4xl uppercase sm:text-5xl">
+            Vantis nutrition calculator
+          </h2>
+          <p className="mt-5 max-w-2xl text-muted-foreground">
+            Dial in carbohydrate, fluid and sodium targets for your next ride or race. Free to use —
+            built to pair with the fuelling strategy in your plan.
+          </p>
+          <div className="mt-10 overflow-hidden rounded-sm border border-border bg-card shadow-lift">
+            <iframe
+              src="https://vantiscalculator.lovable.app"
+              title="Vantis nutrition calculator"
+              loading="lazy"
+              className="h-[900px] w-full border-0 bg-background"
+            />
+          </div>
+          <a
+            href="https://vantiscalculator.lovable.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+          >
+            Open the calculator in a new tab
+            <ArrowUpRight className="size-4" />
+          </a>
+        </div>
+      </section>
+
       {/* Pricing */}
       <section id="pricing" className="border-t border-border py-24">
         <div className="mx-auto max-w-6xl px-5">
