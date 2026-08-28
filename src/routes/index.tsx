@@ -90,16 +90,6 @@ const PROCESS = [
   },
 ];
 
-const INCLUDED = [
-  "Fully individualised weekly training plan",
-  "Unlimited plan adjustments as life changes",
-  "Structured workouts delivered to your head unit",
-  "Ride-by-ride file analysis and feedback",
-  "Race and event tactical preparation",
-  "Direct messaging access to your coach",
-  "Monthly video or phone check-in call",
-  "Pacing, fuelling and equipment guidance",
-];
 
 function Index() {
   return (
