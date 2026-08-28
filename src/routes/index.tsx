@@ -401,7 +401,7 @@ function Index() {
                 ],
               },
             ].map((plan) => (
-              <div key={plan.name} className="bg-card p-8 lg:p-10">
+              <div key={plan.name} className="flex h-full flex-col bg-card p-8 lg:p-10">
                 <h3 className="text-xl uppercase">{plan.name}</h3>
                 <p className="mt-6 flex items-end gap-2">
                   <span className="font-[family-name:var(--font-display)] text-5xl font-black text-primary">
@@ -419,7 +419,7 @@ function Index() {
                 </ul>
                 <a
                   href="#contact"
-                  className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+                  className="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90"
                 >
                   Apply for a spot
                   <ArrowUpRight className="size-4" />
