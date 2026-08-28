@@ -44,7 +44,7 @@ const PILLARS = [
   {
     icon: Activity,
     title: "Physiology first",
-    body: "Training zones come from measured lactate and threshold data — not a percentage of a number you set three seasons ago.",
+    body: "Training zones come from measured lactate and threshold data — not a percentage of a number you set three seasons ago. Remove the guess work.",
   },
   {
     icon: Wind,
