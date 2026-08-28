@@ -167,7 +167,7 @@ function Index() {
             {[
               { k: "Tailored", v: "plans for every athlete" },
               { k: "1:1", v: "coaching, never templated" },
-              { k: "CdA + Lactate", v: "testing in-house" },
+              { k: "Testing", v: "CdA + Lactate" },
             ].map((s) => (
               <div key={s.k}>
                 <dt className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-primary">
