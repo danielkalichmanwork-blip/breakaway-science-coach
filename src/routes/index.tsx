@@ -175,7 +175,7 @@ function Index() {
           </div>
           <dl className="mt-14 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-6 border-t border-border pt-8 sm:grid-cols-3">
             {[
-              { k: "$160", v: "per month, all inclusive" },
+              { k: "Tailored", v: "plans for every athlete" },
               { k: "1:1", v: "coaching, never templated" },
               { k: "CdA + Lactate", v: "testing in-house" },
             ].map((s) => (
