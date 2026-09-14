@@ -355,14 +355,45 @@ function Index() {
       <section id="resources" className="border-t border-border py-24">
         <div className="mx-auto max-w-6xl px-5">
           <p className="eyebrow">Resources</p>
-          <h2 className="mt-3 max-w-2xl text-4xl uppercase sm:text-5xl">
-            Vantis nutrition calculator
-          </h2>
+          <h2 className="mt-3 max-w-2xl text-4xl uppercase sm:text-5xl">Tools and reading</h2>
           <p className="mt-5 max-w-2xl text-muted-foreground">
+            Free tools and coaching notes to help you train smarter, fuel better, and understand the why behind the work.
+          </p>
+
+          <div className="mt-10 overflow-hidden rounded-sm border border-border bg-card shadow-lift">
+            <div className="grid lg:grid-cols-[1fr_1.25fr]">
+              <img
+                src="https://substackcdn.com/image/fetch/$s_!15-H!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fapi%2Fv1%2Fprofile%2Fassets%2F242018760%2Flight%3FaspectRatio%3Dlink%26version%3D1"
+                alt="Breakaway Method Substack preview"
+                loading="lazy"
+                width={600}
+                height={400}
+                className="h-64 w-full object-cover lg:h-auto"
+              />
+              <div className="flex flex-col justify-center p-8">
+                <h3 className="text-2xl uppercase">Breakaway Method on Substack</h3>
+                <p className="mt-3 text-muted-foreground">
+                  Coaching notes, training insights, and race reflections — written for athletes who want to dig deeper into the science and the practice.
+                </p>
+                <a
+                  href="https://substack.com/@breakawaymethod"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+                >
+                  Read the latest posts
+                  <ArrowUpRight className="size-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <h3 className="mt-16 text-2xl uppercase">Vantis nutrition calculator</h3>
+          <p className="mt-3 max-w-2xl text-muted-foreground">
             Dial in carbohydrate, fluid and sodium targets for your next ride or race. Free to use —
             built to pair with the fuelling strategy in your plan.
           </p>
-          <div className="mt-10 overflow-hidden rounded-sm border border-border bg-card shadow-lift">
+          <div className="mt-6 overflow-hidden rounded-sm border border-border bg-card shadow-lift">
             <iframe
               src="https://vantiscalculator.lovable.app"
               title="Vantis nutrition calculator"
