@@ -389,10 +389,10 @@ function Index() {
       <section id="pricing" className="border-t border-border py-24">
         <div className="mx-auto max-w-6xl px-5">
           <p className="eyebrow">Pricing</p>
-          <h2 className="mt-3 text-4xl uppercase sm:text-5xl">Choose your level of support</h2>
+          <h2 className="mt-3 text-4xl uppercase sm:text-5xl">The Apex plan</h2>
           <p className="mt-5 max-w-2xl text-muted-foreground">
-            All plans include a one-time $99 startup fee covering account setup, athlete intake,
-            calendar building, event targeting, and training availability assessment.
+            Includes a one-time $99 startup fee covering account setup, athlete intake, calendar
+            building, event targeting, and training availability assessment.
           </p>
           <div className="mx-auto mt-14 max-w-md overflow-hidden rounded-sm border border-border bg-card">
             <div className="flex h-full flex-col bg-card p-8 lg:p-10">
