@@ -428,7 +428,7 @@ function Index() {
               </div>
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
-            CdA and lactate testing sessions are quoted separately based on the tier included above.
+            CdA and lactate testing sessions are quoted separately.
           </p>
         </div>
       </section>
