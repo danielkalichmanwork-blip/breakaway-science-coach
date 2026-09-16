@@ -37,7 +37,6 @@ const NAV = [
   { label: "Testing", href: "#testing" },
   { label: "Coach", href: "#coach" },
   { label: "Resources", href: "#resources" },
-  { label: "Pricing", href: "#pricing" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -390,55 +389,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section id="pricing" className="border-t border-border py-24">
-        <div className="mx-auto max-w-6xl px-5">
-          <p className="eyebrow">Pricing</p>
-          <h2 className="mt-3 text-4xl uppercase sm:text-5xl">The Apex plan</h2>
-          <p className="mt-5 max-w-2xl text-muted-foreground">
-            Includes a one-time $99 startup fee covering account setup, athlete intake, calendar
-            building, event targeting, and training availability assessment.
-          </p>
-          <div className="mx-auto mt-14 max-w-md overflow-hidden rounded-sm border border-border bg-card">
-            <div className="flex h-full flex-col bg-card p-8 lg:p-10">
-                <p className="mt-6 flex items-end gap-2">
-                  <span className="font-[family-name:var(--font-display)] text-5xl font-black text-primary">
-                    $300
-                  </span>
-                  <span className="pb-1.5 text-sm text-muted-foreground">/ month</span>
-                </p>
-                <ul className="mt-8 space-y-3">
-                  {[
-                    "Personalized training plan",
-                    "Premium baseline testing",
-                    "Goal setting & event targeting",
-                    "Race / event strategy including in-person simulation",
-                    "Unlimited contact",
-                    "4 plan updates per month",
-                    "Training plan posted weekly",
-                  ].map((feature) => (
-                    <li key={feature} className="flex items-start gap-2 text-sm">
-                      <Check className="mt-0.5 size-4 shrink-0 text-primary" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="#contact"
-                  className="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-                >
-                  Apply for a spot
-                  <ArrowUpRight className="size-4" />
-                </a>
-              </div>
-          </div>
-          <p className="mt-6 text-sm text-muted-foreground">
-            CdA and lactate testing sessions are quoted separately.
-          </p>
-        </div>
-      </section>
-
-      {/* Contact */}
       <section id="contact" className="relative overflow-hidden border-t border-border py-24">
         <div className="pointer-events-none absolute inset-0 opacity-[0.35] hairline-grid" aria-hidden="true" />
         <div className="relative mx-auto max-w-3xl px-5 text-center">
