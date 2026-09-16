@@ -357,30 +357,35 @@ function Index() {
           <p className="eyebrow">Resources</p>
           <h2 className="mt-3 max-w-2xl text-4xl uppercase sm:text-5xl">Tools and reading</h2>
           <p className="mt-5 max-w-2xl text-muted-foreground">
-            Free tools and coaching notes to help you train smarter, fuel better, and understand the why behind the work.
+            Coaching notes on training, physiology and racing — the why behind the work.
           </p>
 
-          <h3 className="mt-10 text-2xl uppercase">Vantis nutrition calculator</h3>
-          <p className="mt-3 max-w-2xl text-muted-foreground">
-            Dial in carbohydrate, fluid and sodium targets for your next ride or race. Free to use —
-            built to pair with the fuelling strategy in your plan.
-          </p>
-          <div className="mt-6 overflow-hidden rounded-sm border border-border bg-card shadow-lift">
-            <iframe
-              src="https://vantiscalculator.lovable.app"
-              title="Vantis nutrition calculator"
-              loading="lazy"
-              className="h-[900px] w-full border-0 bg-background"
-            />
-          </div>
           <a
-            href="https://vantiscalculator.lovable.app"
+            href="https://substack.com/@breakawaymethod"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+            className="mt-12 block overflow-hidden rounded-sm border border-border bg-card shadow-lift transition-colors hover:border-primary"
           >
-            Open the calculator in a new tab
-            <ArrowUpRight className="size-4" />
+            <img
+              src="https://substackcdn.com/image/fetch/$s_!15-H!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fapi%2Fv1%2Fprofile%2Fassets%2F242018760%2Flight%3FaspectRatio%3Dlink%26version%3D1"
+              alt="Breakaway Method on Substack"
+              loading="lazy"
+              width={1200}
+              height={630}
+              className="h-64 w-full object-cover"
+            />
+            <div className="flex items-center justify-between gap-4 p-6">
+              <div>
+                <h3 className="text-xl uppercase">Breakaway Method on Substack</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Read the latest posts on training, testing and racing.
+                </p>
+              </div>
+              <span className="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-primary">
+                Read the latest posts
+                <ArrowUpRight className="size-4" />
+              </span>
+            </div>
           </a>
         </div>
       </section>
