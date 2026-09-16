@@ -395,22 +395,7 @@ function Index() {
             calendar building, event targeting, and training availability assessment.
           </p>
           <div className="mx-auto mt-14 max-w-md overflow-hidden rounded-sm border border-border bg-card">
-            {(
-              {
-                name: "Apex",
-                price: "$300",
-                features: [
-                  "Personalized training plan",
-                  "Premium baseline testing",
-                  "Goal setting & event targeting",
-                  "Race / event strategy including in-person simulation",
-                  "Unlimited contact",
-                  "4 plan updates per month",
-                  "Training plan posted weekly",
-                ],
-              }
-            ) && (
-              <div className="flex h-full flex-col bg-card p-8 lg:p-10">
+            <div className="flex h-full flex-col bg-card p-8 lg:p-10">
                 <h3 className="text-xl uppercase">Apex</h3>
                 <p className="mt-6 flex items-end gap-2">
                   <span className="font-[family-name:var(--font-display)] text-5xl font-black text-primary">
