@@ -427,7 +427,6 @@ function Index() {
                   <ArrowUpRight className="size-4" />
                 </a>
               </div>
-            )}
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
             CdA and lactate testing sessions are quoted separately based on the tier included above.
