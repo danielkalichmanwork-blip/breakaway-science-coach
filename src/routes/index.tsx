@@ -389,63 +389,30 @@ function Index() {
       <section id="pricing" className="border-t border-border py-24">
         <div className="mx-auto max-w-6xl px-5">
           <p className="eyebrow">Pricing</p>
-          <h2 className="mt-3 text-4xl uppercase sm:text-5xl">Choose your level of support</h2>
+          <h2 className="mt-3 text-4xl uppercase sm:text-5xl">The Apex plan</h2>
           <p className="mt-5 max-w-2xl text-muted-foreground">
-            All plans include a one-time $99 startup fee covering account setup, athlete intake,
-            calendar building, event targeting, and training availability assessment.
+            Includes a one-time $99 startup fee covering account setup, athlete intake, calendar
+            building, event targeting, and training availability assessment.
           </p>
-          <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-border bg-border lg:grid-cols-3">
-            {[
-              {
-                name: "Fundamental",
-                price: "$160",
-                features: [
-                  "Personalized training plan",
-                  "Basic baseline testing",
-                  "Goal setting & event targeting",
-                  "Race / event strategy",
-                  "2 email check-ins / reviews per month",
-                  "1 plan update per month",
-                  "Training plan posted at the beginning of the month",
-                ],
-              },
-              {
-                name: "Prime",
-                price: "$220",
-                features: [
-                  "Personalized training plan",
-                  "Advanced baseline testing",
-                  "Goal setting & event targeting",
-                  "Race / event strategy including in-person simulation",
-                  "1 call + 4 email check-ins / reviews per month",
-                  "2 plan updates per month",
-                  "Training plan posted at the beginning of the month",
-                ],
-              },
-              {
-                name: "Apex",
-                price: "$300",
-                features: [
-                  "Personalized training plan",
-                  "Premium baseline testing",
-                  "Goal setting & event targeting",
-                  "Race / event strategy including in-person simulation",
-                  "Unlimited contact",
-                  "4 plan updates per month",
-                  "Training plan posted weekly",
-                ],
-              },
-            ].map((plan) => (
-              <div key={plan.name} className="flex h-full flex-col bg-card p-8 lg:p-10">
-                <h3 className="text-xl uppercase">{plan.name}</h3>
+          <div className="mx-auto mt-14 max-w-md overflow-hidden rounded-sm border border-border bg-card">
+            <div className="flex h-full flex-col bg-card p-8 lg:p-10">
+                <h3 className="text-xl uppercase">Apex</h3>
                 <p className="mt-6 flex items-end gap-2">
                   <span className="font-[family-name:var(--font-display)] text-5xl font-black text-primary">
-                    {plan.price}
+                    $300
                   </span>
                   <span className="pb-1.5 text-sm text-muted-foreground">/ month</span>
                 </p>
                 <ul className="mt-8 space-y-3">
-                  {plan.features.map((feature) => (
+                  {[
+                    "Personalized training plan",
+                    "Premium baseline testing",
+                    "Goal setting & event targeting",
+                    "Race / event strategy including in-person simulation",
+                    "Unlimited contact",
+                    "4 plan updates per month",
+                    "Training plan posted weekly",
+                  ].map((feature) => (
                     <li key={feature} className="flex items-start gap-2 text-sm">
                       <Check className="mt-0.5 size-4 shrink-0 text-primary" />
                       <span className="text-muted-foreground">{feature}</span>
@@ -460,7 +427,6 @@ function Index() {
                   <ArrowUpRight className="size-4" />
                 </a>
               </div>
-            ))}
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
             CdA and lactate testing sessions are quoted separately based on the tier included above.
