@@ -396,7 +396,6 @@ function Index() {
           </p>
           <div className="mx-auto mt-14 max-w-md overflow-hidden rounded-sm border border-border bg-card">
             <div className="flex h-full flex-col bg-card p-8 lg:p-10">
-                <h3 className="text-xl uppercase">Apex</h3>
                 <p className="mt-6 flex items-end gap-2">
                   <span className="font-[family-name:var(--font-display)] text-5xl font-black text-primary">
                     $300
@@ -429,7 +428,7 @@ function Index() {
               </div>
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
-            CdA and lactate testing sessions are quoted separately based on the tier included above.
+            CdA and lactate testing sessions are quoted separately.
           </p>
         </div>
       </section>
