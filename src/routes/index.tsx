@@ -403,7 +403,7 @@ function Index() {
               href="mailto:breakawaymethod@gmail.com?subject=Coaching%20enquiry"
               className="inline-flex items-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90 glow-primary"
             >
-              coach@breakawaymethod.com
+              breakawaymethod@gmail.com
               <ArrowUpRight className="size-4" />
             </a>
           </div>
