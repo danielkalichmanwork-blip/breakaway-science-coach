@@ -13,6 +13,7 @@ import {
 import heroCyclist from "@/assets/hero-race-corner-bw.jpg.asset.json";
 import lactateTesting from "@/assets/lactate-bw.jpg.asset.json";
 import cdaTesting from "@/assets/tt-solo-cropped.jpg.asset.json";
+import logoWhite from "@/assets/logo-white.png";
 
 const TITLE = "Breakaway Method | Science-Backed Cycling Coaching";
 const DESCRIPTION =
@@ -96,11 +97,14 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-          <a href="#top" className="flex items-baseline gap-2">
-            <span className="font-[family-name:var(--font-display)] text-lg font-black uppercase tracking-tight">
-              Breakaway
-            </span>
-            <span className="eyebrow">Method</span>
+          <a href="#top" className="flex items-center">
+            <img
+              src={logoWhite}
+              alt="Breakaway Method"
+              width={180}
+              height={41}
+              className="h-9 w-auto"
+            />
           </a>
           <div className="hidden items-center gap-7 md:flex">
             {NAV.map((item) => (
@@ -412,12 +416,16 @@ function Index() {
 
       <footer className="border-t border-border py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 text-sm text-muted-foreground sm:flex-row">
-          <p>
-            <span className="font-[family-name:var(--font-display)] font-bold uppercase text-foreground">
-              Breakaway Method
-            </span>{" "}
-            — cycling coaching by Daniel Kalichman
-          </p>
+          <div className="flex items-center gap-3">
+            <img
+              src={logoWhite}
+              alt="Breakaway Method"
+              width={150}
+              height={34}
+              className="h-7 w-auto"
+            />
+            <span>— cycling coaching by Daniel Kalichman</span>
+          </div>
           <a
             href="https://www.ftcycling.ca/"
             target="_blank"
