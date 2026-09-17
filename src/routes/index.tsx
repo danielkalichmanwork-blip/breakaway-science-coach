@@ -16,7 +16,7 @@ import cdaTesting from "@/assets/tt-solo-cropped.jpg.asset.json";
 
 const TITLE = "Breakaway Method | Science-Backed Cycling Coaching";
 const DESCRIPTION =
-  "One-on-one cycling coaching built on physiology, not guesswork. Real-time CdA aero testing, lactate profiling, and athlete-first training plans for $160/month.";
+  "One-on-one cycling coaching built on physiology, not guesswork. Real-time CdA aero testing, lactate profiling, and athlete-first training plans tailored to every rider.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
