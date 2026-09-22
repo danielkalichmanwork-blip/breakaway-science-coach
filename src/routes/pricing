@@ -1,0 +1,112 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ArrowUpRight, Check, Activity, MessageSquare, CalendarCheck, LineChart, Wind, Trophy } from "lucide-react";
+import logoWhite from "@/assets/logo-white.png";
+
+export const Route = createFileRoute("/pricing")({
+  component: PricingPage,
+});
+
+const INCLUDED = [
+  { icon: LineChart, title: "Post ride analysis of data", desc: "Every file reviewed with intent — not just TSS and IF. You get the interpretation and the next step." },
+  { icon: MessageSquare, title: "Unlimited communication", desc: "Ask anything, anytime. Text, email, TrainingPeaks comments — no gatekeeping." },
+  { icon: CalendarCheck, title: "Training plans posted weekly", desc: "Individual plan delivered in TrainingPeaks, built around your actual availability." },
+  { icon: Activity, title: "Weekly updates to training plans", desc: "Life happens. Plan adapts to fatigue, work, weather, illness — not the other way around." },
+  { icon: Wind, title: "Discounted rate on lactate and CdA testing", desc: "Coached athletes get priority booking and reduced rates on lactate profiling and real-time CdA testing." },
+  { icon: Trophy, title: "Race strategy", desc: "Pacing, fuelling, equipment, and tactical planning for A-races, crits, TTs, gravel and track." },
+];
+
+function PricingPage() {
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+          <a href="/" className="flex items-center">
+            <img src={logoWhite} alt="Breakaway Method" width={180} height={41} className="h-9 w-auto" />
+          </a>
+          <a href="/#contact" className="inline-flex items-center gap-1.5 rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90">
+            Start coaching <ArrowUpRight className="size-4" />
+          </a>
+        </nav>
+      </header>
+
+      <section className="relative overflow-hidden py-24">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.35] hairline-grid" aria-hidden="true" />
+        <div className="relative mx-auto max-w-6xl px-5">
+          <p className="eyebrow">Pricing</p>
+          <h1 className="mt-3 max-w-3xl text-5xl leading-[0.95] uppercase sm:text-6xl">
+            Simple pricing.<br />
+            <span className="text-primary">Serious coaching.</span>
+          </h1>
+          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+            No tiers, no templates, no hidden extras. One plan that includes everything you need to get faster.
+          </p>
+
+          <div className="mt-14 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+            {/* Price Card */}
+            <div className="rounded-sm border-2 border-primary bg-card p-10 shadow-lift">
+              <p className="eyebrow text-primary">One-on-one coaching</p>
+              <div className="mt-4 flex items-baseline gap-2">
+                <span className="font-[family-name:var(--font-display)] text-6xl font-black">$300</span>
+                <span className="text-muted-foreground">/ month</span>
+              </div>
+              <p className="mt-3 text-sm text-muted-foreground">
+                + <span className="font-semibold text-foreground">$50 one-time start-up fee</span> for onboarding, initial file review, and plan setup
+              </p>
+
+              <div className="mt-8 border-t border-border pt-8">
+                <h3 className="text-sm font-semibold uppercase tracking-wider">What's included</h3>
+                <ul className="mt-5 space-y-4">
+                  {INCLUDED.map((item) => (
+                    <li key={item.title} className="flex gap-3">
+                      <Check className="mt-0.5 size-5 shrink-0 text-primary" />
+                      <span className="text-[15px] leading-snug">{item.title}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <a
+                href="mailto:breakawaymethod@gmail.com?subject=Coaching%20enquiry%20-%20Pricing"
+                className="mt-10 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary px-6 py-4 text-base font-semibold text-primary-foreground hover:opacity-90 glow-primary"
+              >
+                Book a free consultation <ArrowUpRight className="size-4" />
+              </a>
+              <p className="mt-3 text-center text-xs text-muted-foreground">30 minutes, no obligation. Tell me about your season and goals.</p>
+            </div>
+
+            {/* Details */}
+            <div className="space-y-6">
+              <div className="rounded-sm border border-border bg-card p-8">
+                <h3 className="text-lg uppercase">How it works</h3>
+                <p className="mt-3 text-sm text-muted-foreground">After your free consultation, the $50 start-up covers the deep dive: full training history review, current fitness assessment, goal setting, and your first block built from scratch.</p>
+                <p className="mt-3 text-sm text-muted-foreground">Then $300/month ongoing. Cancel anytime — no contracts.</p>
+              </div>
+
+              <div className="grid gap-px overflow-hidden rounded-sm border border-border bg-border">
+                {INCLUDED.map((item) => (
+                  <div key={item.title} className="bg-card p-6">
+                    <item.icon className="size-5 text-primary" />
+                    <h4 className="mt-3 font-semibold">{item.title}</h4>
+                    <p className="mt-2 text-sm text-muted-foreground">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="rounded-sm border border-border bg-secondary/40 p-6">
+                <p className="text-sm font-semibold">Need only testing?</p>
+                <p className="mt-2 text-sm text-muted-foreground">Lactate and CdA testing are available as standalone bookings — you don't have to be a coached athlete. Coached athletes just pay less.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t border-border py-10">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 text-sm text-muted-foreground">
+          <span>© Breakaway Method — cycling coaching by Daniel Kalichman</span>
+          <a href="/" className="hover:text-foreground">← Back to home</a>
+        </div>
+      </footer>
+    </div>
+  );
+}
