@@ -10,9 +10,6 @@ import {
   Check,
 } from "lucide-react";
 
-import heroCyclist from "@/assets/hero-race-corner-bw.jpg.asset.json";
-import lactateTesting from "@/assets/lactate-bw.jpg.asset.json";
-import cdaTesting from "@/assets/tt-solo-cropped.jpg.asset.json";
 import logoWhite from "@/assets/logo-white.png";
 
 const TITLE = "Breakaway Method | Science-Backed Cycling Coaching";
@@ -130,7 +127,7 @@ function Index() {
       {/* Hero */}
       <section id="top" className="relative flex min-h-[92vh] items-end overflow-hidden">
         <img
-          src={heroCyclist.url}
+          src={hero-race-corner-bw.jpg}
           alt="Road cyclists cornering at speed in a race"
           width={1920}
           height={1280}
@@ -216,7 +213,7 @@ function Index() {
           <div className="mt-14 grid gap-8 lg:grid-cols-2">
             {[
               {
-                img: cdaTesting.url,
+                img: cda-testing.jpg,
                 alt: "Cyclist performing real-time aerodynamic CdA field testing on a track",
                 tag: "Aerodynamics",
                 title: "Real-time CdA testing",
@@ -228,7 +225,7 @@ function Index() {
                 ],
               },
               {
-                img: lactateTesting.url,
+                img: lactate-bw.jpg,
                 alt: "Lactate analyser and blood sample strip in a performance testing lab",
                 tag: "Physiology",
                 title: "Lactate testing",
