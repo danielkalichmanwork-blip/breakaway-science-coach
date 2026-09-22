@@ -116,7 +116,7 @@ function Index() {
                   <li key={item} className="flex items-start gap-2 text-[15px]"><Check className="mt-0.5 size-4 shrink-0 text-primary" /><span>{item}</span></li>
                 ))}
               </ul>
-              <a href="/pricing" className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-primary-foreground hover:opacity-90 glow-primary">View pricing <ArrowUpRight className="size-4" /></a>
+              <a href="mailto:breakawaymethod@gmail.com?subject=Get%20started%20with%20Breakaway%20Method" className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-primary-foreground hover:opacity-90 glow-primary">Get started <ArrowUpRight className="size-4" /></a>
             </div>
           </div>
         </div>
