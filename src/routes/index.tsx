@@ -3,7 +3,7 @@ import { ArrowUpRight, Activity, Wind, LineChart, MessageSquare, CalendarCheck, 
 import logoWhite from "@/assets/logo-white.png";
 
 const TITLE = "Breakaway Method | Science-Backed Cycling Coaching";
-const DESCRIPTION = "One-on-one cycling coaching built on physiology, not guesswork. Real-time CdA aero testing, lactate profiling, and athlete-first training plans tailored to every rider.";
+const DESCRIPTION = "Data-driven cycling coaching for riders who want to train with purpose, understand their performance, and make every effort count. One-on-one coaching, lactate and CdA testing.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
