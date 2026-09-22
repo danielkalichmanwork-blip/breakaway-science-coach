@@ -60,7 +60,7 @@ function Index() {
         <div className="relative mx-auto w-full max-w-6xl px-5 pb-20 pt-32">
           <p className="eyebrow">Science-backed · Athlete-first</p>
           <h1 className="mt-4 max-w-3xl text-5xl leading-[0.95] uppercase sm:text-6xl lg:text-7xl">Train on evidence.<br /><span className="text-primary">Race on form.</span></h1>
-          <p className="mt-6 max-w-xl text-lg text-muted-foreground">Breakaway Method is one-on-one cycling coaching built around measured physiology and measured aerodynamics — for riders who want to know why they're faster.</p>
+          <p className="mt-6 max-w-xl text-lg text-muted-foreground">Data-driven cycling coaching for riders who want to train with purpose, understand their performance, and make every effort count.</p>
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a href="#contact" className="inline-flex items-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90 glow-primary">Book a free consultation <ArrowUpRight className="size-4" /></a>
             <a href="#method" className="inline-flex items-center gap-2 rounded-sm border border-border px-6 py-3 font-semibold transition-colors hover:bg-secondary">See the method</a>
