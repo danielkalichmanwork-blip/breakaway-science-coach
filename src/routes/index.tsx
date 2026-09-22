@@ -3,7 +3,7 @@ import { ArrowUpRight, Activity, Wind, LineChart, MessageSquare, CalendarCheck, 
 import logoWhite from "@/assets/logo-white.png";
 
 const TITLE = "Breakaway Method | Science-Backed Cycling Coaching";
-const DESCRIPTION = "Data-driven cycling coaching for riders who want to train with purpose, understand their performance, and make every effort count. One-on-one coaching, lactate and CdA testing.";
+const DESCRIPTION = "One-on-one cycling coaching built on physiology, not guesswork. Real-time CdA aero testing, lactate profiling, and athlete-first training plans tailored to every rider.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -43,7 +43,10 @@ const PROCESS = [
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <>
+      {/* Logo green override - #8ADB0C from BREAKAWAY logo */}
+      <style>{`:root{--primary:83 90% 45% !important;--ring:83 90% 45% !important;--primary-foreground:0 0% 10% !important;}`}</style>
+      <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <a href="#top" className="flex items-center"><img src={logoWhite} alt="Breakaway Method" width={180} height={41} className="h-9 w-auto" /></a>
@@ -60,7 +63,7 @@ function Index() {
         <div className="relative mx-auto w-full max-w-6xl px-5 pb-20 pt-32">
           <p className="eyebrow">Science-backed · Athlete-first</p>
           <h1 className="mt-4 max-w-3xl text-5xl leading-[0.95] uppercase sm:text-6xl lg:text-7xl">Train on evidence.<br /><span className="text-primary">Race on form.</span></h1>
-          <p className="mt-6 max-w-xl text-lg text-muted-foreground">Data-driven cycling coaching for riders who want to train with purpose, understand their performance, and make every effort count.</p>
+          <p className="mt-6 max-w-xl text-lg text-muted-foreground">Breakaway Method is one-on-one cycling coaching built around measured physiology and measured aerodynamics — for riders who want to know why they're faster.</p>
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a href="#contact" className="inline-flex items-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90 glow-primary">Book a free consultation <ArrowUpRight className="size-4" /></a>
             <a href="#method" className="inline-flex items-center gap-2 rounded-sm border border-border px-6 py-3 font-semibold transition-colors hover:bg-secondary">See the method</a>
@@ -116,7 +119,7 @@ function Index() {
                   <li key={item} className="flex items-start gap-2 text-[15px]"><Check className="mt-0.5 size-4 shrink-0 text-primary" /><span>{item}</span></li>
                 ))}
               </ul>
-              <a href="mailto:breakawaymethod@gmail.com?subject=Get%20started%20with%20Breakaway%20Method" className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-primary-foreground hover:opacity-90 glow-primary">Get started <ArrowUpRight className="size-4" /></a>
+              <a href="/pricing" className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-primary-foreground hover:opacity-90 glow-primary">View pricing <ArrowUpRight className="size-4" /></a>
             </div>
           </div>
         </div>
@@ -134,7 +137,7 @@ function Index() {
 
       <section id="coach" className="border-t border-border bg-card/40 py-24">
         <div className="mx-auto grid max-w-6xl gap-14 px-5 lg:grid-cols-[1fr_0.85fr]">
-          <div><p className="eyebrow">The coach</p><h2 className="mt-3 text-4xl uppercase sm:text-5xl">Daniel Kalichman</h2><div className="mt-6 space-y-4 leading-relaxed text-muted-foreground"><p>I am a former professional cyclist who has raced for some of the top teams in North America. I began my cycling career late, starting at age 23 while in university, but quickly made significant progress.</p><p>I understand the importance of balance; I trained, raced, and travelled while completing seven years of post-secondary education. Time management is key to success both as an athlete and in personal life.</p><p>As a marginal gains fanatic and early adopter, I have researched various claims and identified what truly works. I apply these insights to my coaching, ensuring everything an athlete does on or off the bike has purpose.</p><p>The Breakaway Method emphasizes the use of data—including power output, heart rate, race analysis, training load, heart rate variability (HRV), lactate threshold, and aerodynamics (CdA)—to make informed training decisions without unnecessary complexity. I work with athletes across a range of disciplines and goals, including road racing, fondos, crit racing, gravel, time trials, track cycling, and general fitness.</p><p>Based in Toronto, Ontario, I help cyclists improve their performance, better understand their training and data, and make the most of the time they have on the bike. Whether you're preparing for your first race or chasing a personal best, the Breakaway Method is about making every part of your training purposeful. To learn more about personalized cycling coaching, please reach out at <a href="mailto:breakawaymethod@gmail.com" className="font-semibold text-primary underline underline-offset-4 hover:text-primary/80">breakawaymethod@gmail.com</a></p></div></div>
+          <div><p className="eyebrow">The coach</p><h2 className="mt-3 text-4xl uppercase sm:text-5xl">Daniel Kalichman</h2><div className="mt-6 space-y-4 text-muted-foreground"><p>I’m an ex-pro cyclist and now a coach who believes the best results derive from both experience and evidence. Everything I ask of an athlete, I’ve tested myself — through training, racing, wind, fatigue, and high-pressure competition.</p><p>Breakaway Method was built around a simple idea: replace inherited training habits with measurable, individualized coaching. I use data including lactate, power, aerodynamics, training load, and race performance to turn physiology and sports science into practical decisions.</p><p>I coach road, gravel, time trial, and track cyclists — from developing racers to athletes pursuing national-level performance. The approach is always individual. The standard of evidence is not.</p></div></div>
           <div className="rounded-sm border border-border bg-card p-8"><h3 className="text-lg uppercase">Coaching focus</h3><ul className="mt-5 space-y-3 text-sm">{["Road, criterium and gravel racing", "Time trial power and position optimisation", "Track endurance and pursuit pacing", "Gran fondo and long-distance events", "Return to structure after a layoff"].map((f) => (<li key={f} className="flex items-start gap-2"><Check className="mt-0.5 size-4 shrink-0 text-primary" /><span className="text-muted-foreground">{f}</span></li>))}</ul><div className="mt-8 border-t border-border pt-6"><p className="eyebrow">Trusted partner</p><p className="mt-3 text-sm text-muted-foreground">Position work is only as good as the fit underneath it. Breakaway Method athletes work with FT Cycling for professional bike fitting.</p><a href="https://www.ftcycling.ca/" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline">FT Cycling bike fitting <ArrowUpRight className="size-4" /></a></div></div>
         </div>
       </section>
@@ -146,5 +149,6 @@ function Index() {
 
       <footer className="border-t border-border py-10"><div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 text-sm text-muted-foreground sm:flex-row"><div className="flex items-center gap-3"><img src={logoWhite} alt="Breakaway Method" width={150} height={34} className="h-7 w-auto" /><span>— cycling coaching by Daniel Kalichman</span></div><a href="https://www.ftcycling.ca/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">Bike fitting: FT Cycling</a></div></footer>
     </div>
+    </>
   );
 }
