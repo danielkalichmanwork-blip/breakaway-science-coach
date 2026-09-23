@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Activity, Wind, LineChart, MessageSquare, CalendarCheck, ClipboardList, Check } from "lucide-react";
+import { ArrowUpRight, Activity, Wind, LineChart, MessageSquare, CalendarCheck, ClipboardList, Check, Instagram } from "lucide-react";
 import logoWhite from "@/assets/logo-white.png";
 
 // Exact green from your BREAKAWAY logo - the A + underlines
@@ -204,13 +204,24 @@ function Index() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <a href="mailto:breakawaymethod@gmail.com?subject=Coaching%20enquiry" className="inline-flex items-center gap-2 rounded-sm bg-primary px-6 py-3 font-semibold text-black transition-opacity hover:opacity-90 glow-primary">breakawaymethod@gmail.com <ArrowUpRight className="size-4" /></a>
           </div>
+          <div className="mt-8 flex items-center justify-center gap-2 text-sm text-muted-foreground">
+            <span>Follow on</span>
+            <a href="https://www.instagram.com/breakawaymethod/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline">
+              <Instagram className="size-4" /> @breakawaymethod
+            </a>
+          </div>
         </div>
       </section>
 
       <footer className="border-t border-border py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 text-sm text-muted-foreground sm:flex-row">
           <div className="flex items-center gap-3"><img src={logoWhite} alt="Breakaway Method" width={150} height={34} className="h-7 w-auto" /><span>— cycling coaching by Daniel Kalichman</span></div>
-          <a href="https://www.ftcycling.ca/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">Bike fitting: FT Cycling</a>
+          <div className="flex items-center gap-6">
+            <a href="https://www.instagram.com/breakawaymethod/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-foreground">
+              <Instagram className="size-4" /> Instagram
+            </a>
+            <a href="https://www.ftcycling.ca/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">Bike fitting: FT Cycling</a>
+          </div>
         </div>
       </footer>
     </div>
