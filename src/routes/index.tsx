@@ -32,15 +32,15 @@ const NAV = [
 ];
 
 const PILLARS = [
-  { icon: Activity, title: "Physiology first", body: "Training zones come from measured lactate and threshold data — not a percentage of a number you set three seasons ago. Remove the guess work." },
-  { icon: Wind, title: "Aerodynamics that pay", body: "On road and track, watts saved beat watts gained. Real-time CdA testing turns position changes into measurable time." },
+  { icon: Activity, title: "Physiology first", body: "Training zones come from accurate testing and data — not a percentage of a number you set three seasons ago. Remove the guess work." },
+  { icon: Wind, title: "Aerodynamics that pay", body: "On road and track, watts saved beat watts gained. Applying the fastest position for each specific athlete." },
   { icon: LineChart, title: "Data with a decision", body: "Every file is reviewed with intent. You get the interpretation and the next step, not a wall of charts." },
   { icon: MessageSquare, title: "Athlete-first", body: "Your plan bends around work, family, weather and fatigue. Consistency beats a perfect plan you can't complete." },
 ];
 
 const PROCESS = [
   { step: "01", icon: MessageSquare, title: "Consultation", body: "A conversation about your season, history, constraints and the result you actually care about." },
-  { step: "02", icon: ClipboardList, title: "Baseline testing", body: "Lactate profiling and/or a CdA session to establish where your power and your drag really sit." },
+  { step: "02", icon: ClipboardList, title: "Baseline testing", body: "Power testing to establish your baseline fitness and set accurate, individualized training zones." },
   { step: "03", icon: CalendarCheck, title: "Build the block", body: "Weekly plan delivered in TrainingPeaks, adjusted as life and adaptation demand." },
   { step: "04", icon: LineChart, title: "Review and retest", body: "Ongoing analysis with periodic retesting so progression is verified, not assumed." },
 ];
