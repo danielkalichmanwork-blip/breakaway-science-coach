@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Activity, Wind, LineChart, MessageSquare, CalendarCheck, ClipboardList, Check, Instagram } from "lucide-react";
+import { ArrowUpRight, Activity, Wind, LineChart, MessageSquare, CalendarCheck, ClipboardList, Check } from "lucide-react";
 import logoWhite from "@/assets/logo-white.png";
 
 const LOGO_GREEN_HEX = "#8ADB0C";
@@ -43,6 +43,12 @@ const PROCESS = [
   { step: "03", icon: CalendarCheck, title: "Build the block", body: "Weekly plan delivered in TrainingPeaks, adjusted as life and adaptation demand." },
   { step: "04", icon: LineChart, title: "Review and retest", body: "Ongoing analysis with periodic retesting so progression is verified, not assumed." },
 ];
+
+function InstagramIcon() {
+  return (
+    <svg className="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+  );
+}
 
 function Index() {
   return (
@@ -205,7 +211,7 @@ function Index() {
           <div className="mt-8 flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <span>Follow on</span>
             <a href="https://www.instagram.com/breakawaymethod/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline">
-              <Instagram className="size-4" /> @breakawaymethod
+              <InstagramIcon /> @breakawaymethod
             </a>
           </div>
         </div>
@@ -216,7 +222,7 @@ function Index() {
           <div className="flex items-center gap-3"><img src={logoWhite} alt="Breakaway Method" width={150} height={34} className="h-7 w-auto" /><span>— cycling coaching by Daniel Kalichman</span></div>
           <div className="flex items-center gap-6">
             <a href="https://www.instagram.com/breakawaymethod/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-foreground">
-              <Instagram className="size-4" /> Instagram
+              <InstagramIcon /> Instagram
             </a>
             <a href="https://www.ftcycling.ca/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">Bike fitting: FT Cycling</a>
           </div>
