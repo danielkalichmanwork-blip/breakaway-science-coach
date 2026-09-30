@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Check, Activity, MessageSquare, CalendarCheck, LineChart, Wind, Trophy } from "lucide-react";
+import { ArrowUpRight, Check, Activity, MessageSquare, CalendarCheck, LineChart, Wind, Trophy, Instagram } from "lucide-react";
 import logoWhite from "@/assets/logo-white.png";
+
+const LOGO_GREEN_HEX = "#8ADB0C";
+const LOGO_GREEN_HSL = "83 90% 45%";
 
 export const Route = createFileRoute("/pricing")({
   component: PricingPage,
@@ -18,12 +21,21 @@ const INCLUDED = [
 function PricingPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <style>{`
+        :root {
+          --primary: ${LOGO_GREEN_HSL} !important;
+          --ring: ${LOGO_GREEN_HSL} !important;
+        }
+        .bg-primary { background-color: ${LOGO_GREEN_HEX} !important; }
+        .text-primary { color: ${LOGO_GREEN_HEX} !important; }
+        .border-primary { border-color: ${LOGO_GREEN_HEX} !important; }
+      `}</style>
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <a href="/" className="flex items-center">
             <img src={logoWhite} alt="Breakaway Method" width={180} height={41} className="h-9 w-auto" />
           </a>
-          <a href="/#contact" className="inline-flex items-center gap-1.5 rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90">
+          <a href="/#contact" className="inline-flex items-center gap-1.5 rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-black hover:opacity-90">
             Start coaching <ArrowUpRight className="size-4" />
           </a>
         </nav>
@@ -46,7 +58,7 @@ function PricingPage() {
             <div className="rounded-sm border-2 border-primary bg-card p-10 shadow-lift">
               <p className="eyebrow text-primary">One-on-one coaching</p>
               <div className="mt-4 flex items-baseline gap-2">
-                <span className="font-[family-name:var(--font-display)] text-6xl font-black">$300</span>
+                <span className="font-[family-name:var(--font-display)] text-6xl font-black">$225</span>
                 <span className="text-muted-foreground">/ month</span>
               </div>
               <p className="mt-3 text-sm text-muted-foreground">
@@ -67,7 +79,7 @@ function PricingPage() {
 
               <a
                 href="mailto:breakawaymethod@gmail.com?subject=Coaching%20enquiry%20-%20Pricing"
-                className="mt-10 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary px-6 py-4 text-base font-semibold text-primary-foreground hover:opacity-90 glow-primary"
+                className="mt-10 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary px-6 py-4 text-base font-semibold text-black hover:opacity-90 glow-primary"
               >
                 Book a free consultation <ArrowUpRight className="size-4" />
               </a>
@@ -79,7 +91,7 @@ function PricingPage() {
               <div className="rounded-sm border border-border bg-card p-8">
                 <h3 className="text-lg uppercase">How it works</h3>
                 <p className="mt-3 text-sm text-muted-foreground">After your free consultation, the $50 start-up covers the deep dive: full training history review, current fitness assessment, goal setting, and your first block built from scratch.</p>
-                <p className="mt-3 text-sm text-muted-foreground">Then $300/month ongoing. Cancel anytime — no contracts.</p>
+                <p className="mt-3 text-sm text-muted-foreground">Then $225/month ongoing. Cancel anytime — no contracts.</p>
               </div>
 
               <div className="grid gap-px overflow-hidden rounded-sm border border-border bg-border">
@@ -102,8 +114,11 @@ function PricingPage() {
       </section>
 
       <footer className="border-t border-border py-10">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 text-sm text-muted-foreground">
-          <span>© Breakaway Method — cycling coaching by Daniel Kalichman</span>
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 text-sm text-muted-foreground sm:flex-row">
+          <div className="flex items-center gap-3">
+            <span>© Breakaway Method — cycling coaching by Daniel Kalichman</span>
+            <a href="https://www.instagram.com/breakawaymethod/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-foreground"><Instagram className="size-4" /> Instagram</a>
+          </div>
           <a href="/" className="hover:text-foreground">← Back to home</a>
         </div>
       </footer>
