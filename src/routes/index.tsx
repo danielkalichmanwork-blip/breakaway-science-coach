@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Activity, Wind, LineChart, MessageSquare, CalendarCheck, ClipboardList, Check, Instagram } from "lucide-react";
 import logoWhite from "@/assets/logo-white.png";
 
-// Exact green from your BREAKAWAY logo - the A + underlines
 const LOGO_GREEN_HEX = "#8ADB0C";
 const LOGO_GREEN_HSL = "83 90% 45%";
 
@@ -48,7 +47,6 @@ const PROCESS = [
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* LOGO GREEN OVERRIDE - matches #8ADB0C from A + underlines */}
       <style>{`
         :root {
           --primary: ${LOGO_GREEN_HSL} !important;
@@ -130,12 +128,12 @@ function Index() {
             <div>
               <p className="eyebrow">Pricing</p>
               <h2 className="mt-3 text-4xl uppercase sm:text-5xl">One plan.<br /><span className="text-primary">Everything included.</span></h2>
-              <p className="mt-5 text-muted-foreground">No tiers, no upsells. $300 per month plus a $50 one-time start-up fee for onboarding and initial plan build. Cancel anytime.</p>
+              <p className="mt-5 text-muted-foreground">No tiers, no upsells. $225 per month plus a $50 one-time start-up fee for onboarding and initial plan build. Cancel anytime.</p>
               <a href="/pricing" className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline">See full pricing details <ArrowUpRight className="size-4" /></a>
             </div>
             <div className="rounded-sm border-2 border-primary bg-card p-8 shadow-lift">
               <div className="flex items-baseline justify-between"><p className="eyebrow text-primary">Coaching</p><p className="text-xs text-muted-foreground">$50 start-up</p></div>
-              <div className="mt-3 flex items-baseline gap-2"><span className="font-[family-name:var(--font-display)] text-5xl font-black">$300</span><span className="text-muted-foreground">/ month</span></div>
+              <div className="mt-3 flex items-baseline gap-2"><span className="font-[family-name:var(--font-display)] text-5xl font-black">$225</span><span className="text-muted-foreground">/ month</span></div>
               <ul className="mt-8 space-y-3">
                 {["Post ride analysis of data", "Unlimited communication", "Training plans posted weekly", "Weekly updates to training plans", "Discounted rate on lactate and CdA testing", "Race strategy"].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-[15px]"><Check className="mt-0.5 size-4 shrink-0 text-primary" /><span>{item}</span></li>
