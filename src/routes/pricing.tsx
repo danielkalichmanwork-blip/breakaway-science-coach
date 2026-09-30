@@ -5,7 +5,20 @@ import logoWhite from "@/assets/logo-white.png";
 const LOGO_GREEN_HEX = "#8ADB0C";
 const LOGO_GREEN_HSL = "83 90% 45%";
 
+const TITLE = "Pricing | Breakaway Method";
+const DESCRIPTION = "One-on-one science-backed cycling coaching: $225 per month plus a $50 one-time start-up fee. Post-ride analysis, weekly plans, unlimited communication, and discounted lactate and CdA testing.";
+
 export const Route = createFileRoute("/pricing")({
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: PricingPage,
 });
 
